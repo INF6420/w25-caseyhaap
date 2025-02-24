@@ -1,0 +1,59 @@
+*{
+    margin-left: 0;
+    text-align: center;
+}
+body {
+    background-color: #efefef;
+    color: #030303;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    font-style: italic
+}
+a {
+    color: #030303;
+}
+#nav, #news, #archives, #local, #search, #calendar, #login, #infographic, #student-archives, #search-2, #teacher-archives,  #footer {
+    background-color: #618a98;
+    margin-top: 20px;
+    padding: 10px 0px 5 px 0px;
+}
+li {  
+    display: inline;
+    padding: 20px;
+    margin-top: 20px;
+}
+#nav{
+    height: 40px;
+}
+#news {
+    width: 40%;
+    margin: 10px;
+    padding: 10px;
+}
+#calendar {
+    width: 60%;
+    margin: 10px;
+    padding: 10px;
+}       
+#archives, #local, #search-2 {
+    width: 40%;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+}
+#search, #login {
+    width: 60%;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+}     
+#search, #search-2, #footer {
+    background-color:  #e54c77;
+}  
+#footer{
+    margin: 10px;
+}
+#search, #calendar, #search-2 {
+    display: inline-block;
+}

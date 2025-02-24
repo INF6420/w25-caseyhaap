@@ -4,68 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casey Gauss School Library Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div>
-                <a href="https://angell.a2schools.org" class="school-logo"><img src="images/schoollogo.jpg" alt="School of Make Believe Logo" width="100" height="75"/></a>
-                <img src="images/library.jpg" alt="School Library of Make Believe Logo" width="200" height="150"/>
-                <p>The School Library of Make-Believe</p>
-            </div>
-        </nav>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="students.html">Students</a></li>
-                <li><a href="teachers.html">Teachers</a></li>
-             </ul>
-        </nav>
-    </header>
+        <div id="header">
+            <h1>The School Library of Make-Believe</h1>
+                <div id="nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="students.html">Students</a></li>
+                        <li><a href="teachers.html">Teachers</a></li>
+                    </ul>
+                </div>
+        </div>
+
+    <div>
     <main>
-        <div>
-           <h1>Library News</h1>
+        <div id="news">
+            <h2>Library News</h2>
                 <h3>February 2025: Check out our library's new flexible seating!</h3>
                     <p>
-                    <img src="images/flexibleseating.png" alt="Library Flexible Seating" width="400" height="250"/>
+                    <img src="images/flexibleseating.png" alt="Library Flexible Seating" width="300" height="150"/>
                     </p>
                     <p>Thank you to our PTO who organized grants enabling us to purchase new flexible seating for student learning in the library!</p>
-                <h3>Check out the Library News Archives</h3>
-                    <div class="dropdown">
+        </div>
+        <div id="archives">
+                <h2>Library News Archives</h2>
+                    <div id="dropdown-menu" class="dropdown">
                         <button class="dropbtn">Library News Archives</button>
                         <div class="dropdown-content">
                           <span class="link">January 2025</span>
                           <span class="link">December 2024</span>
                           <span class="link">November 2024</span>
                         </div>
-                <h3>What's happening in Michigan's libraries?</h3>
-                    <p>      
-                        <a href="https://www.chalkbeat.org/detroit/2024/04/17/educators-and-parents-testify-in-support-of-michigan-library-bills/">
-                        Plans to put libraries in most Michigan schools get support from educators and parents </a>
-                    </p>
-                    </div>  
         </div>
-        <div>
-                <h1>What are you looking for?</h1> 
+         <div id="local">
+            <h2>What's happening in Michigan's libraries?</h2>      
+                    <a href="https://www.chalkbeat.org/detroit/2024/04/17/educators-and-parents-testify-in-support-of-michigan-library-bills/">
+                    Plans to put libraries in most Michigan schools get support from educators and parents </a>
+                    </div>  
+
+        </div>
+        <div id="search">
+                <h2>What are you looking for?</h2> 
                     <input type="text" placeholder="Search..">
         </div>
-        <div>
-                <h1>What's coming up in the School Library of Make Believe?</h1>
-                    <iframe src="https://calendar.google.com/calendar/embed?src=136633fad06c802ae287d26750285fe507503146ef5ada3ce2ac2a4bf1bd78d7%40group.calendar.google.com&ctz=America%2FDetroit" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        <div id="calendar">
+                <h2>What's coming up in the School Library of Make Believe?</h2>
+                <iframe src="https://calendar.google.com/calendar/embed?src=136633fad06c802ae287d26750285fe507503146ef5ada3ce2ac2a4bf1bd78d7%40group.calendar.google.com&ctz=America%2FDetroit" style="border: 0" width="400" height="300" frameborder="0" scrolling="no"></iframe>
         </div>
     </main>
-    <footer>
-        <div>
-                <h1>Contact</h1>
-                    <p>Casey Gauss</p>
-                    <p>caseyhaap@gmail.com</p>
-        </div>
-        <div>
-                <p>555 Fairy Tale Lane</p>
-                <p>The Land of Make-Believe, 12345</p>
-                <p>555-123-4567</p>
-        </div>
 
-    </footer>
+    <div id="footer">
+        <h2>Contact Your School Librarian</h2>
+        <p>Casey Gauss</p>
+        <p>caseyhaap@gmail.com</p>
+            <div>
+                <a href="https://angell.a2schools.org" class="school-logo"><img src="images/schoollogo.jpg" alt="School of Make Believe Logo" width="100" height="75"/></a>
+            </div>
+    </div>
+</div>
 </body>
 </html>
