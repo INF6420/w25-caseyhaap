@@ -1,6 +1,8 @@
 *{
     margin-left: 0;
     text-align: center;
+    padding: 0;
+    background-blend-mode: darken;
 }
 body {
     background-color: #efefef;
@@ -13,47 +15,90 @@ h1{
 a {
     color: #030303;
 }
-#nav, #news, #archives, #local, #search, #calendar, #login, #infographic, #student-archives, #search-2, #teacher-archives,  #footer {
-    background-color: #618a98;
-    margin-top: 20px;
-    padding: 10px 0px 5 px 0px;
-}
 li {  
     display: inline;
     padding: 20px;
-    margin-top: 20px;
+}
+main {
+    display: flex;
+}
+#header {
+    color:  #ec5d5d;
 }
 #nav{
+    background-color: #618a98;
+    padding: 10px 0px 10px 0px;
+    margin: 5px;
     height: 40px;
 }
 #news {
-    width: 40%;
-    margin: 10px;
+    background-color: #618a98;
+    padding: 10px 10px 10px 10px;
+    margin: 5px;
+}
+#archives {
+    margin:5px;
     padding: 10px;
+    height: 125px;
+}
+#local-news {
+    background-color: #618a98;
+    padding: 10px 10px 10px 10px;
+    margin: 5px;
+    height: 175px;
+}
+#search{
+    background-color:  #ec5d5d;
+    padding: 10px 10px 10px 10px;
+    margin: 5px;
+    height: 125px;
 }
 #calendar {
-    width: 60%;
-    margin: 10px;
-    padding: 10px;
-}       
-#archives, #local, #search-2 {
-    width: 40%;
-    height: 150px;
-    margin: 10px;
-    padding: 10px;
+    background-color: #618a98;
+    padding: 10px 0px 5px 0px;
+    margin: 5px;
+    height: 435px;
 }
-#search, #login {
-    width: 60%;
+#login{
+    background-color: #618a98;
+    padding: 10px 10px 10px 0px;
+    margin: 5px; 
+    height: 125px;
+}
+#student-archives{
+    background-color: #618a98;
+    padding: 10px 0px 5px 0px;
+    margin: 5px;
+    height: 350px;
+}
+#search-2 {
+    background-color:  #ec5d5d;
+    padding: 10px 10px 10px 10px;
+    margin: 5px;
+    height: 125px;
+}
+#teacher-archives {
+    background-color: #618a98;
+    padding: 10px 0px 10px 0px;
+    margin: 5px;
     height: 150px;
-    margin: 10px;
-    padding: 10px;
-}     
-#search, #search-2, #footer {
-    background-color:  #e54c77;
+}        
+#contact {
+    background-color:  #ec5d5d;
+    padding: 10px 10px 10px 10px;
+    margin: 5px;
+    height: 175px;
+    font-style: italic;
 }  
+#infographic-students {
+    height: 550px;
+    color:#ec5d5d
+}
+#infographic-teachers {
+    margin: 5px;
+    padding: 10px 0px 5 px 0px;
+}
 #footer{
     margin: 10px;
 }
-#search, #calendar, #search-2 {
-    display: inline-block;
-}
+
