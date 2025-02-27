@@ -1,0 +1,113 @@
+*{
+    margin-left: 0;
+    text-align: center;
+    padding: 0;
+}
+body {
+    background-color: #efefef;
+    color: #030303;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    font-style: italic
+}
+a {
+    color: #030303;
+}
+a:hover{
+    color:#640303
+}
+li {  
+    display: inline;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+}
+#header {
+    color:  #ec5d5d;
+    background-image: linear-gradient(#efefef, #b2aeae)
+}
+#nav{
+    padding: 10px 0px 10px 0px;
+    margin: 5px;
+    height: 40px;
+    background-image: linear-gradient( #618a98, #77949d)
+}
+#news {
+    padding: 10px 10px 10px 10px;
+    margin: 5px;
+    background-image: linear-gradient( #618a98, #77949d)
+}
+#archives {
+    margin:5px;
+    padding: 10px 10px 10px 10px;
+    height: 125px;
+    background-image: linear-gradient(#efefef, #b2aeae)
+}
+#local-news {
+    padding: 10px 10px 10px 10px;
+    margin: 5px;
+    height: 175px;
+    background-image: linear-gradient( #618a98, #77949d)
+}
+#search{
+    padding: 10px 10px 10px 10px;
+    margin: 5px;
+    height: 125px;
+    background-image: linear-gradient( #ec5d5d, #f5a6a6)
+}
+#calendar {
+    padding: 10px 10px 10px 10px;
+    margin: 5px;
+    height: 435px;
+    background-image: linear-gradient( #618a98, #77949d)
+}
+#login{
+    padding: 10px 10px 10px 10px;
+    margin: 5px; 
+    height: 125px;
+    background-image: linear-gradient( #618a98, #77949d)
+}
+#student-archives{
+    padding: 10px 10px 10px 10px;
+    margin: 5px;
+    height: 350px;
+    background-image: linear-gradient( #618a98, #77949d)
+}
+#search-2 {
+    padding: 10px 10px 10px 10px;
+    margin: 5px;
+    height: 125px;
+    background-image: linear-gradient( #ec5d5d, #f5a6a6)
+}
+#teacher-archives {
+    padding: 10px 10px 10px 10px;
+    margin: 5px;
+    height: 150px;
+    background-image: linear-gradient( #618a98, #77949d)
+}        
+#contact {
+
+    padding: 10px 10px 10px 10px;
+    margin: 5px;
+    height: 175px;
+    font-style: italic;
+    background-image: linear-gradient( #ec5d5d, #f5a6a6)
+}  
+#infographic-students {
+    margin: 5px;
+    padding: 10px 10px 0px 10px;
+    color:#ec5d5d;
+}
+#infographic-teachers {
+    margin: 5px;
+    padding: 10px 10px 10px 10px;
+}
+#footer{
+    margin: 5px;
+    padding: 10px 10px 10px 10px;
+    background-image: linear-gradient(#efefef, #b2aeae)
+}
+
