@@ -27,10 +27,18 @@ li {
     display: inline;
     padding: 20px;
 }
-
-main {
+@media (max-width: 767px) {
+    main {
     display: flex;
     flex: 1;
+    flex-wrap: wrap;
+    }
+}
+@media (max-width: 1199px) {
+    main {
+    display: flex;
+    flex: 1;
+    }
 }
 #header {
     color:  #ec5d5d;
@@ -96,7 +104,6 @@ main {
     background-image: linear-gradient( #618a98, #77949d)
 }        
 #contact {
-
     padding: 10px 10px 10px 10px;
     margin: 5px;
     height: 175px;
