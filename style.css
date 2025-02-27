@@ -34,7 +34,7 @@ li {
     flex-wrap: wrap;
     }
 }
-@media (max-width: 1199px) {
+@media (max-width: 1637px) {
     main {
     display: flex;
     flex: 1;
