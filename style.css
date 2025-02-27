@@ -27,18 +27,21 @@ li {
     display: inline;
     padding: 20px;
 }
-@media (max-width: 767px) {
+@media (max-width: 669px) {
     main {
     display: flex;
     flex: 1;
     flex-wrap: wrap;
     }
 }
-@media (max-width: 1637px) {
+@media (max-width: 1080px) {
     main {
     display: flex;
     flex: 1;
     }
+}
+.picture {
+    width: 320px;
 }
 #header {
     color:  #ec5d5d;
