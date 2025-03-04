@@ -21,11 +21,21 @@ a {
     color: #030303;
 }
 a:hover{
-    color:#640303
+    color:#b90a0a
 }
 li {  
     display: inline;
     padding: 20px;
+}
+button {
+    width: 150px;
+    padding: 5px;
+    margin: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+#contact_button {
+    text-align: right;
 }
 @media (max-width: 669px) {
     main {
@@ -79,13 +89,13 @@ li {
 #calendar {
     padding: 10px 10px 10px 10px;
     margin: 5px;
-    height: 435px;
+    height: 400px;
     background-image: linear-gradient( #618a98, #77949d)
 }
 #login{
     padding: 10px 10px 10px 10px;
     margin: 5px; 
-    height: 125px;
+    height: 175px;
     background-image: linear-gradient( #618a98, #77949d)
 }
 #student-archives{
@@ -109,7 +119,7 @@ li {
 #contact {
     padding: 10px 10px 10px 10px;
     margin: 5px;
-    height: 175px;
+    height: 200px;
     font-style: italic;
     background-image: linear-gradient( #ec5d5d, #f5a6a6)
 }  

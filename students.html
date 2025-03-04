@@ -26,18 +26,39 @@
                     <form action="action_page.php" method="post">
                         <div class="container">
                         <label for="uname"><b>Username</b></label>
-                        <input type="text" placeholder="Enter Username" name="uname" required>
+                        <input 
+                            type="text" 
+                            placeholder="Enter Username" 
+                            name="uname" 
+                            required
+                            minlength="6"
+                            maxlength="6">
                         <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <input 
+                            type="password" 
+                            placeholder="Enter Password" 
+                            name="psw" 
+                            required
+                            minlength="6"
+                            maxlength="10">
+                        <p>
                         <button type="submit">Login</button>
                         <label>
-                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                        <input 
+                            type="checkbox" 
+                            checked="checked" 
+                            name="remember"> Remember me
                         </label>
+                        </p>
                         </div>
+                        <p>
                         <div class="container" style="background-color:#f1f1f1">
-                        <button type="button" class="cancelbtn">Cancel</button>
+                        <button 
+                            type="button" 
+                            class="cancelbtn">Cancel</button>
                         <span class="psw">Forgot <a href="#">password?</a></span>
                         </div>
+                        </p>
                     </form>
             </div>
             <div id="infographic-students">
@@ -58,16 +79,24 @@
         <div class="right-content">
             <div id="search-2">
                 <h2>What are you looking for?</h2> 
-                    <input type="text" placeholder="Search..">
+                    <input type="text" placeholder="Search...">
             </div>
             <div id="student-archives">
                 <h3>Past Circulation Graphs</h3>
                     <div class="dropdown">
                     <button class="dropbtn">Circulation Archives</button>
                     <div class="dropdown-content">
-                    <span class="link">Grades K-2 January 2025</span>
-                    <span class="link">Grades 3-5 December 2024</span>
-                    <span class="link">Grades K-2 December 2024</span>
+                        <select id="simple" name="simple">
+                            <option>Grades K-2 January 2025</option>
+                            <option>Grades 3-5 December 2024</option>
+                            <option>Grades K-2 December 2024</option>
+                            <option>Grades 3-5 November 2024</option>
+                            <option>Grades K-2 November 2024</option>
+                            <option>Grades 3-5 October 2024</option>
+                            <option>Grades K-2 October 2024</option>
+                            <option>Grades 3-5 September 2024</option>
+                            <option>Grades K-2 September 2024</option>
+                        </select>
                     </div>
                     <p>
                         <img class="picture" src="images/library.jpg" alt="Library Books" width="400" height="200"/>
@@ -75,9 +104,24 @@
             </div> 
             </div>
             <div id="contact">
-                <h2>Contact Your School Librarian</h2>
-                <p>Casey Gauss</p>
-                <p>caseyhaap@gmail.com</p>
+                <h2>Contact Mrs. Gauss</h2>
+                        <form action="/my-handling-form-page" method="post">
+                            <p>
+                              <label for="name">Name:</label>
+                              <input type="text" id="name" placeholder="Your name" name="user_name" required />
+                            </p>
+                            <p>
+                              <label for="mail">Email:</label>
+                              <input type="email" id="mail" placeholder="Your email address" name="user_email" required />
+                            </p>
+                            <p>
+                              <label for="msg">Message:</label>
+                              <textarea id="msg" name="user_message" required></textarea>
+                            </p>
+                            <p id="contact_button" class="button">
+                                <button type="submit">Send your message</button>
+                              </p>
+                          </form>
 
         </div>
         </div>
