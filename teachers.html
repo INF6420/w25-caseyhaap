@@ -22,37 +22,47 @@
         <div class="left-sidebar">
             <div id="login">
                 <h2>Staff Log-In</h2>
-                <form action="action_page.php" method="post">
-                    <div class="container">
-                    <label for="uname"><b>Username</b></label>
-                    <input 
-                        type="text" 
-                        placeholder="Enter Username" 
-                        name="uname" 
-                        required
-                        minlength="6">
-                    <label for="psw"><b>Password</b></label>
-                    <input 
-                        type="password" 
-                        placeholder="Enter Password" 
-                        name="psw" 
-                        required>
-                    <p>
-                    <button type="submit">Login</button>
-                    <label>
-                    <input 
-                        type="checkbox" 
-                        checked="checked" 
-                        name="remember"> Remember me
-                    </label>
-                    </p>
-                    </div>
-                    <p>
-                    <div class="container" style="background-color:#f1f1f1">
-                    <button type="button" class="cancelbtn">Cancel</button>
-                    <span class="psw">Forgot <a href="#">password?</a></span>
-                    </div>
-                    </p>
+                <form 
+                        action="https://formspree.io/f/xqapknlg" 
+                        method="post"
+                        class="validate">
+                        <div class="container">
+                        <label 
+                            for="uname"><b>Username</b>
+                        </label>
+                        <input 
+                            type="text" 
+                            placeholder="Enter Username" 
+                            name="uname" 
+                            required
+                            minlength="6"
+                            maxlength="6">
+                        <label for="psw"><b>Password</b></label>
+                        <input 
+                            type="password" 
+                            placeholder="Enter Password" 
+                            name="psw" 
+                            required
+                            minlength="6"
+                            maxlength="10">
+                        <p>
+                        <button type="submit">Login</button>
+                        <label>
+                        <input 
+                            type="checkbox" 
+                            checked="checked" 
+                            name="remember"> Remember me
+                        </label>
+                        </p>
+                        </div>
+                        <p>
+                        <div class="container" style="background-color:#f1f1f1">
+                        <button 
+                            type="button" 
+                            class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                        </div>
+                        </p>
                     </form>
             </div>
             <div id="infographic-teachers">
@@ -76,7 +86,7 @@
             <div id="teacher-archives">
                 <h3>Check out the Tech Tips Archives</h3>
                     <div class="dropdown">
-                    <button class="dropbtn">Tech Tips</button>
+                    <button class="dropbtn" type="submit">Tech Tips</button>
                     <div class="dropdown-content">
                         <select id="simple" name="simple">
                             <option>Collaborating with your school librarian</option>
@@ -88,33 +98,50 @@
         </div>
         <div id="contact">
             <h2>Contact Mrs. Gauss</h2>
-                        <form action="/my-handling-form-page" method="post">
-                            <p>
-                              <label for="name">Name:</label>
-                              <input 
-                                type="text" 
-                                id="name" 
-                                placeholder="Your name" 
-                                name="user_name" 
-                                required/>
-                            </p>
-                            <p>
-                              <label for="mail">Email:</label>
-                              <input 
-                                type="email" 
-                                id="mail" 
-                                placeholder="Your email address" 
-                                name="user_email" 
-                                required/>
-                            </p>
-                            <p>
-                              <label for="msg">Message:</label>
-                              <textarea id="msg" name="user_message" required></textarea>
-                            </p>
-                            <p id="contact_button" class="button">
-                                <button type="submit">Send your message</button>
-                              </p>
-                          </form>
+            <form 
+                action="https://formspree.io/f/xwplkvjp" 
+                method="post"
+                class="validate">
+                <p>
+                  <label 
+                    for="name">
+                    Name:</label>
+                  <input 
+                    type="text" 
+                    id="name" 
+                    placeholder="Your name" 
+                    name="user_name" class="form-input" 
+                    required/>
+                </p>
+                <p>
+                  <label 
+                    for="mail">
+                    Email:</label>
+                  <input 
+                    type="email" 
+                    id="mail" 
+                    placeholder="Your email address" 
+                    name="user_email" 
+                    class="form-input" 
+                    required/>
+                </p>
+                <p>
+                  <label    
+                    for="msg">
+                    Message:</label>
+                  <textarea 
+                    id="msg" 
+                    name="user_message" 
+                    class="form-input" 
+                    required></textarea>
+                </p>
+                <p 
+                    id="contact_button" 
+                    class="button">
+                    <button 
+                        type="submit">Send your message</button>
+                </p>
+              </form>
         </div>
         </div>
     </main>
@@ -126,5 +153,6 @@
         </div>
     </div>
 </div>
+<script src="script.js"></script>   
 </body>
 </html>

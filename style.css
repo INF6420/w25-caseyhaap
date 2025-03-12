@@ -30,14 +30,46 @@ li {
 button {
     width: 150px;
     padding: 5px;
-    margin: 0;
+    margin: 5px;
     box-sizing: border-box;
     cursor: pointer;
+    color: #ffffff;
+    background-color: #0b232b;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+.cancelbtn {
+    background-color: #618a98;
+}
+label {
+    font-weight: 700;
+    text-align: left;
+}
+.form-input {
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: left;
+    width: 50%;
+}
+.form-input:focus {
+ outline: none;
+ border: 2px solid #25549c
 }
 #contact_button {
     text-align: right;
 }
-@media (max-width: 669px) {
+.error {
+ border-color:#b90a0a
+}
+.error-message {
+    text-align:right;
+    margin: 5px;
+    font-size: 10px;
+    color: #b90a0a
+}
+@media (max-width: 600px) {
     main {
     display: flex;
     flex: 1;
@@ -95,7 +127,7 @@ button {
 #login{
     padding: 10px 10px 10px 10px;
     margin: 5px; 
-    height: 175px;
+    height: 200px;
     background-image: linear-gradient( #618a98, #77949d)
 }
 #student-archives{
@@ -119,8 +151,7 @@ button {
 #contact {
     padding: 10px 10px 10px 10px;
     margin: 5px;
-    height: 200px;
-    font-style: italic;
+    height: 275px;
     background-image: linear-gradient( #ec5d5d, #f5a6a6)
 }  
 #infographic-students {

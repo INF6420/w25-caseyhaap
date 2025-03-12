@@ -34,7 +34,7 @@
                 <div id="archives">
                     <h2>Library News Archives</h2>
                     <div id="dropdown-menu" class="dropdown">
-                        <button class="dropbtn">Library News Archives</button>
+                        <button class="dropbtn" type="submit">Archives</button>
                         <div class="dropdown-content">
                             <select id="simple" name="simple">
                                 <option>January 2025</option>
@@ -65,22 +65,49 @@
                     </div>
                     <div id="contact">
                         <h2>Contact Mrs. Gauss</h2>
-                        <form action="/my-handling-form-page" method="post">
+                        <form 
+                            action="https://formspree.io/f/xwplkvjp" 
+                            method="post"
+                            class="validate">
                             <p>
-                              <label for="name">Name:</label>
-                              <input type="text" id="name" placeholder="Your name" name="user_name" required/>
+                              <label 
+                                for="name">
+                                Name:</label>
+                              <input 
+                                type="text" 
+                                id="name" 
+                                placeholder="Your name" 
+                                name="user_name" class="form-input" 
+                                required/>
                             </p>
                             <p>
-                              <label for="mail">Email:</label>
-                              <input type="email" id="mail" placeholder="Your email address" name="user_email" required/>
+                              <label 
+                                for="mail">
+                                Email:</label>
+                              <input 
+                                type="email" 
+                                id="mail" 
+                                placeholder="Your email address" 
+                                name="user_email" 
+                                class="form-input" 
+                                required/>
                             </p>
                             <p>
-                              <label for="msg">Message:</label>
-                              <textarea id="msg" name="user_message" required></textarea>
+                              <label    
+                                for="msg">
+                                Message:</label>
+                              <textarea 
+                                id="msg" 
+                                name="user_message" 
+                                class="form-input" 
+                                required></textarea>
                             </p>
-                            <p id="contact_button" class="button">
-                                <button type="submit">Send your message</button>
-                              </p>
+                            <p 
+                                id="contact_button" 
+                                class="button">
+                                <button 
+                                    type="submit">Send your message</button>
+                            </p>
                           </form>
                     </div>
                 
@@ -94,6 +121,7 @@
                 </div>
             </div>
         </div>
+        <script src="script.js"></script>
     </body>
     </html>
     
