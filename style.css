@@ -3,9 +3,6 @@
     text-align: center;
     padding: 0;
 }
-/* main > div {
-    width: 50%;
-} */
 .left-sidebar-index {
     width: 40%
 }
@@ -24,30 +21,48 @@
 .right-sidebar-t {
     width: 40%
 }
-@media (max-width: 768px) {
-    main {
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    }
-}
-@media (max-width: 2000px) {
-    main {
-    display: flex;
-    flex: 1;
-    }
-}
 body {
     background-color: #efefef;
     color: #030303;
     font-family:Georgia, 'Times New Roman', Times, serif;
     min-height: 100vh;
 }
-body > div {
+@media (min-width: 768px) {
+    main {
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
+    flex-wrap: wrap;
+    }
+    }
+@media (max-width: 768px) {
+    .left-sidebar-index {
+        width: 100%
+    }
+    }
+@media (max-width: 768px) {
+    .right-sidebar-index {
+            width: 100%
+    }
+    }
+@media (max-width: 768px) {
+    .left-sidebar-s {
+            width: 100%
+        }
+        }
+@media (max-width: 768px) {
+        .right-sidebar-s {
+            width: 100%
+        }
+        }
+@media (max-width: 768px) {
+        .left-sidebar-t {
+            width: 100%
+        }
+        }
+@media (max-width: 768px) {
+        .right-sidebar-t {
+            width: 100%
+        }
+        }
 h1{
     font-style: italic
 }
