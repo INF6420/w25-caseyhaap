@@ -3,6 +3,40 @@
     text-align: center;
     padding: 0;
 }
+/* main > div {
+    width: 50%;
+} */
+.left-sidebar-index {
+    width: 40%
+}
+.right-sidebar-index {
+    width: 60%
+}
+.left-sidebar-s {
+    width: 60%
+}
+.right-sidebar-s {
+    width: 40%
+}
+.left-sidebar-t {
+    width: 60%
+}
+.right-sidebar-t {
+    width: 40%
+}
+@media (max-width: 768px) {
+    main {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    }
+}
+@media (max-width: 2000px) {
+    main {
+    display: flex;
+    flex: 1;
+    }
+}
 body {
     background-color: #efefef;
     color: #030303;
@@ -21,7 +55,7 @@ a {
     color: #030303;
 }
 a:hover{
-    color:#b90a0a
+    color:#f1bf4a
 }
 li {  
     display: inline;
@@ -69,18 +103,8 @@ label {
     font-size: 10px;
     color: #b90a0a
 }
-@media (max-width: 600px) {
-    main {
-    display: flex;
-    flex: 1;
-    flex-wrap: wrap;
-    }
-}
-@media (max-width: 1080px) {
-    main {
-    display: flex;
-    flex: 1;
-    }
+.container {
+    margin: 10px
 }
 .picture {
     width: 320px;
@@ -99,6 +123,10 @@ label {
     padding: 10px 10px 10px 10px;
     margin: 5px;
     background-image: linear-gradient( #618a98, #77949d)
+}
+#news img {
+    width: 80%;
+    height:40%
 }
 #archives {
     margin:5px;
@@ -127,7 +155,7 @@ label {
 #login{
     padding: 10px 10px 10px 10px;
     margin: 5px; 
-    height: 200px;
+    height: 250px;
     background-image: linear-gradient( #618a98, #77949d)
 }
 #student-archives{
