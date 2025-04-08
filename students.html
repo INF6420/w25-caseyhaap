@@ -10,85 +10,158 @@
     <div>
         <div id="header">
             <h1>The School Library of Make-Believe</h1>
-                <div id="nav">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="students.html">Students</a></li>
-                        <li><a href="teachers.html">Teachers</a></li>
-                    </ul>
-                </div>
-        </div>
-
+            <div id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="students.html">Students</a></li>
+                    <li><a href="teachers.html">Teachers</a></li>
+                </ul>
+            </div>
+        </div>     
     <main>
-        <div class="left-sidebar">
+        <div class="left-sidebar-s">
             <div id="login">
                 <h2>Student Log-In</h2>
-                    <form action="action_page.php" method="post">
-                        <div class="container">
-                        <label for="uname"><b>Username</b></label>
-                        <input type="text" placeholder="Enter Username" name="uname" required>
-                        <label for="psw"><b>Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="psw" required>
+                <form 
+                    action="https://formspree.io/f/xjkyvloo" 
+                    method="post"
+                    class="validate">
+                    
+                    <div class="container">
+                        <label 
+                        for="uname"><b>Username</b>
+                    </label>
+                    <input 
+                        type="text" 
+                        placeholder="Enter Username" 
+                        name="uname" 
+                        required
+                        minlength="6"
+                        maxlength="6">
+                    <label for="psw"><b>Password</b></label>
+                    <input 
+                        type="password" 
+                        placeholder="Enter Password" 
+                        name="psw" 
+                        required
+                        minlength="6"
+                        maxlength="10">
+                    <p>
                         <button type="submit">Login</button>
                         <label>
-                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                            <input 
+                            type="checkbox" 
+                            checked="checked" 
+                            name="remember"> Remember me
                         </label>
-                        </div>
-                        <div class="container" style="background-color:#f1f1f1">
-                        <button type="button" class="cancelbtn">Cancel</button>
+                    </p>
+                </div>
+                <p>
+                    <div class="container" style="background-color:#f1f1f1">
+                        <button 
+                        type="button" 
+                        class="cancelbtn">Cancel</button>
                         <span class="psw">Forgot <a href="#">password?</a></span>
-                        </div>
-                    </form>
-            </div>
-            <div id="infographic-students">
-                <h2>Looking for book ideas?</h2>
-                    <div style="position: relative; width: 100%; height: 0; padding-top: 100.0000%;
-                    padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-                    border-radius: 8px; will-change: transform;">
-                    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-                    src="https://www.canva.com/design/DAGeo-Kj2xg/S8xv2c1yJqpSWscv6f3DCQ/view?embed">
-                    </iframe>
                     </div>
-            </div>
-            <div>
-                <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGeo-Kj2xg&#x2F;S8xv2c1yJqpSWscv6f3DCQ&#x2F;view?utm_content=DAGeo-Kj2xg&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Grades 3-5 Top Books Circulated</a> by Casey Gauss
+                </p>
+                </form>
             </div>  
-        </div>  
-
-        <div class="right-content">
+        <div id="infographic-students">
+            <h2>Looking for book ideas?</h2>
+            <div style="position: relative; width: 100%; height: 0; padding-top: 100.0000%;
+            padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+            border-radius: 8px; will-change: transform;">
+            <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+            src="https://www.canva.com/design/DAGeo-Kj2xg/S8xv2c1yJqpSWscv6f3DCQ/view?embed">
+            </iframe>
+            </div>
+            <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGeo-Kj2xg&#x2F;S8xv2c1yJqpSWscv6f3DCQ&#x2F;view?utm_content=DAGeo-Kj2xg&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Grades 3-5 Top Books Circulated</a> by Casey Gauss
+        </div> 
+        </div>
+        <div class="right-sidebar-s">
             <div id="search-2">
-                <h2>What are you looking for?</h2> 
-                    <input type="text" placeholder="Search..">
+            <h2>What are you looking for?</h2> 
+                <input type="text" placeholder="Search...">
             </div>
             <div id="student-archives">
-                <h3>Past Circulation Graphs</h3>
-                    <div class="dropdown">
-                    <button class="dropbtn">Circulation Archives</button>
-                    <div class="dropdown-content">
-                    <span class="link">Grades K-2 January 2025</span>
-                    <span class="link">Grades 3-5 December 2024</span>
-                    <span class="link">Grades K-2 December 2024</span>
-                    </div>
-                    <p>
-                        <img src="images/library.jpg" alt="Library Books" width="400" height="200"/>
-                    </p>
-            </div> 
+            <h3>Past Circulation Graphs</h3>
+                <div class="dropdown">
+                <button class="dropbtn" type="submit">Archives</button>
+                <div class="dropdown-content">
+                    <select id="simple" name="simple">
+                        <option>Grades K-2 January 2025</option>
+                        <option>Grades 3-5 December 2024</option>
+                        <option>Grades K-2 December 2024</option>
+                        <option>Grades 3-5 November 2024</option>
+                        <option>Grades K-2 November 2024</option>
+                        <option>Grades 3-5 October 2024</option>
+                        <option>Grades K-2 October 2024</option>
+                        <option>Grades 3-5 September 2024</option>
+                        <option>Grades K-2 September 2024</option>
+                    </select>
+                </div>
+            <p>
+                <img class="picture" src="images/library.jpg" alt="Library Books" width="400" height="200"/>
+            </p>
+        </div> 
             </div>
             <div id="contact">
-                <h2>Contact Your School Librarian</h2>
-                <p>Casey Gauss</p>
-                <p>caseyhaap@gmail.com</p>
-
-        </div>
+                <h2>Contact Mrs. Gauss</h2>
+                <form 
+                action="https://formspree.io/f/xwplkvjp" 
+                method="post"
+                class="validate">
+                <p>
+                    <label 
+                        for="name">
+                        Name:</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        placeholder="Your name" 
+                        name="user_name" class="form-input" 
+                        required/>
+                </p>
+                <p>
+                <label 
+                    for="mail">
+                    Email:</label>
+                <input 
+                    type="email" 
+                    id="mail" 
+                    placeholder="Your email address" 
+                    name="user_email" 
+                    class="form-input" 
+                    required/>
+                </p>
+                <p>
+                <label    
+                    for="msg">
+                    Message:</label>
+                <textarea 
+                    id="msg" 
+                    name="user_message" 
+                    class="form-input" 
+                    required></textarea>
+                </p>
+                <p 
+                    id="contact_button" 
+                    class="button">
+                    <button 
+                        type="submit">Send your message</button>
+                </p>
+                </form>
+            </div> 
         </div>
     </main>
-    
-    <div id="footer">
+
+        <div id="footer">
         <div>
-            <a href="https://angell.a2schools.org" class="school-logo"><img src="images/schoollogo.jpg" alt="School of Make Believe Logo" width="50" height="50"/></a>
-            <p>The School of Make-Believe 2025</p>
+        <a href="https://angell.a2schools.org" class="school-logo"><img src="images/schoollogo.jpg" alt="School of Make Believe Logo" width="50" height="50"/></a>
+        <p>The School of Make-Believe 2025</p>
+        </div>
         </div>
     </div>
-</div>
+<script src="script.js"></script>
 </body>
 </html>
