@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="School Library of Make Believe, Homepage, 2025">
     <title>Casey Gauss School Library Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -27,10 +28,13 @@
                     <p>
                         <img 
                             class="picture" 
-                            src="images/flexibleseating.png" 
+                            src="images/flexibleseating.webp" 
+                            srcet="images/flexibleseating.webp 640w,
+                            images/flexibleseating-sm.webp 320w"
                             alt="Library Flexible Seating" 
                             width="80%"
-                            height="40%"/>
+                            height="40%"
+                            lazyload />
                     </p>
                     <p>Thank you to our PTO who organized grants enabling us to purchase new flexible seating for student learning in the library!</p>
                 </div>
@@ -43,7 +47,8 @@
                             type="submit">Archives
                         </button>
                         <div class="dropdown-content">
-                            <select id="archive-dates" name="archive-dates">
+                            <label for="drop-down content">Newsletter:</label>
+                            <select id="drop-down content">
                                 <option>January 2025</option>
                                 <option>December 2024</option>
                                 <option>November 2024</option>
@@ -63,7 +68,10 @@
                     <div id="search">
                         <h2>What are you looking for?</h2> 
                         <p>
-                        <input type="text" placeholder="Search...">
+                        <input 
+                        type="text" 
+                        placeholder="Search..."
+                        style="font-size: 14px">
                         </p>
                     </div>
                     <div id="calendar">
@@ -91,6 +99,7 @@
                                 type="text" 
                                 id="name" 
                                 placeholder="Your name" 
+                                style="font-size: 14px"
                                 name="user_name" class="form-input" 
                                 required/>
                             </p>
@@ -102,6 +111,7 @@
                                 type="email" 
                                 id="mail" 
                                 placeholder="Your email address" 
+                                style="font-size: 14px"
                                 name="user_email" 
                                 class="form-input" 
                                 required/>
@@ -132,7 +142,7 @@
                     <a 
                         href="https://angell.a2schools.org" 
                         class="school-logo"><img 
-                        src="images/schoollogo.jpg" 
+                        src="images/schoollogo.webp" 
                         alt="School of Make Believe Logo" 
                         width="50" 
                         height="50"/></a>
