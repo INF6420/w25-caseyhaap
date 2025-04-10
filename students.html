@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="School Library of Make Believe, Student Page, 2025">
     <title>Casey Gauss School Library Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -34,20 +35,22 @@
                     <input 
                         type="text" 
                         placeholder="Enter Username" 
-                        style="font-size: 12px"
+                        style="width: 200px"
                         name="uname" 
                         required
                         minlength="6"
                         maxlength="6">
+                    <p>
                     <label for="psw"><b>Password</b></label>
                     <input 
                         type="password" 
                         placeholder="Enter Password" 
-                        style="font-size: 12px"
+                        style="width: 200px"
                         name="psw" 
                         required
                         minlength="6"
                         maxlength="10">
+                    </p>
                     <p>
                         <button type="submit">Login</button>
                         <label>
@@ -74,7 +77,7 @@
             padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
             border-radius: 8px; will-change: transform;">
             <iframe 
-            title="Infographic top three circulated books"
+            title="Infographic top three circulated books grades 3-5"
             loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
             src="https://www.canva.com/design/DAGeo-Kj2xg/S8xv2c1yJqpSWscv6f3DCQ/view?embed">
             </iframe>
@@ -85,14 +88,18 @@
         <div class="right-sidebar-s">
             <div id="search-2">
             <h2>What are you looking for?</h2> 
-                <input type="text" placeholder="Search...">
+                <input 
+                type="text" 
+                placeholder="Search..."
+                style="font-size: 14px">
             </div>
             <div id="student-archives">
             <h3>Past Circulation Graphs</h3>
                 <div class="dropdown">
                 <button class="dropbtn" type="submit">Archives</button>
                 <div class="dropdown-content">
-                    <select>
+                    <label for="drop-down content">Infographic:</label>
+                    <select id="drop-down content">
                         <option>Grades K-2 January 2025</option>
                         <option>Grades 3-5 December 2024</option>
                         <option>Grades K-2 December 2024</option>
@@ -105,7 +112,7 @@
                     </select>
                 </div>
             <p>
-                <img class="picture" src="images/library.jpg" alt="Library Books" width="400" height="200"/>
+                <img class="picture" src="images/library.webp" alt="Library Books" width="400" height="200"/>
             </p>
         </div> 
             </div>
@@ -123,7 +130,7 @@
                         type="text" 
                         id="name" 
                         placeholder="Your name" 
-                        style="font-size: 12px"
+                        style="font-size: 14px"
                         name="user_name" class="form-input" 
                         required/>
                 </p>
@@ -135,7 +142,7 @@
                     type="email" 
                     id="mail" 
                     placeholder="Your email address" 
-                    style="font-size: 12px"
+                    style="font-size: 14px"
                     name="user_email" 
                     class="form-input" 
                     required/>
