@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="School Library of Make Believe, Teacher Page, 2025">
     <title>Casey Gauss School Library Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -34,20 +35,22 @@
                         <input 
                             type="text" 
                             placeholder="Enter Username" 
-                            style="font-size: 12px"
+                            style="width: 200px"
                             name="uname" 
                             required
                             minlength="6"
                             maxlength="6">
+                        <p>
                         <label for="psw"><b>Password</b></label>
                         <input 
                             type="password" 
                             placeholder="Enter Password" 
-                            style="font-size: 12px"
+                            style="width: 200px"
                             name="psw" 
                             required
                             minlength="6"
                             maxlength="10">
+                        </p>
                         <p>
                             <button type="submit">Login</button>
                             <label>
@@ -90,14 +93,16 @@
             <h2>What are you looking for?</h2> 
                 <input 
                 type="text" 
-                placeholder="Search...">
+                placeholder="Search..."
+                style="width: 200px">
             </div>
             <div id="teacher-archives">
                 <h3>Check out the Tech Tips Archives</h3>
                     <div class="dropdown">
-                    <button class="dropbtn" type="submit">Tech Tips</button>
+                    <button class="dropbtn" type="submit">All Tech Tips</button>
                     <div class="dropdown-content">
-                        <select id="tech-tips" name="tech-tips">
+                    <label for="drop-down content">Tech Tip:</label>
+                        <select id="drop-down content">
                             <option>Collaborating with your school librarian</option>
                             <option>Using Canva in your classroom</option>
                             <option>Exploring Sora</option>
@@ -119,7 +124,7 @@
                     type="text" 
                     id="name" 
                     placeholder="Your name" 
-                    style="font-size: 12px"
+                    style="width: 200px; font-size: 14px"
                     name="user_name" class="form-input" 
                     required/>
                 </p>
@@ -131,7 +136,7 @@
                     type="email" 
                     id="mail" 
                     placeholder="Your email address" 
-                    style="font-size: 12px"
+                    style="font-size: 14px; width: 200px"
                     name="user_email" 
                     class="form-input" 
                     required/>
@@ -144,6 +149,7 @@
                     id="msg" 
                     name="user_message" 
                     class="form-input" 
+                    style="width: 200px"
                     required></textarea>
                 </p>
                 <p 
