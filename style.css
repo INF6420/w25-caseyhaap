@@ -88,7 +88,7 @@ button {
     letter-spacing: 1px;
 }
 .cancelbtn {
-    background-color: #618a98;
+    background-color:#0b232b;
 }
 label {
     font-weight: 700;
@@ -146,13 +146,13 @@ label {
 #archives {
     margin:5px;
     padding: 10px 10px 10px 10px;
-    height: 125px;
+    height: 175px;
     background-image: linear-gradient(#efefef, #b2aeae)
 }
 #local-news {
     padding: 10px 10px 10px 10px;
     margin: 5px;
-    height: 175px;
+    height: 200px;
     background-image: linear-gradient( #618a98, #77949d)
 }
 #search{

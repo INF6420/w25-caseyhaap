@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="School Library of Make Believe, Homepage, 2025">
     <title>Casey Gauss School Library Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -27,10 +28,13 @@
                     <p>
                         <img 
                             class="picture" 
-                            src="images/flexibleseating.png" 
+                            src="images/flexibleseating.webp" 
+                            srcet="images/flexibleseating.webp 640w,
+                            images/flexibleseating-sm.webp 320w"
                             alt="Library Flexible Seating" 
                             width="80%"
-                            height="40%"/>
+                            height="40%"
+                            lazyload />
                     </p>
                     <p>Thank you to our PTO who organized grants enabling us to purchase new flexible seating for student learning in the library!</p>
                 </div>
@@ -43,7 +47,8 @@
                             type="submit">Archives
                         </button>
                         <div class="dropdown-content">
-                            <select id="simple" name="simple">
+                            <label for="drop-down content">Newsletter:</label>
+                            <select id="drop-down content">
                                 <option>January 2025</option>
                                 <option>December 2024</option>
                                 <option>November 2024</option>
@@ -63,12 +68,16 @@
                     <div id="search">
                         <h2>What are you looking for?</h2> 
                         <p>
-                        <input type="text" placeholder="Search...">
+                        <input 
+                        type="text" 
+                        placeholder="Search..."
+                        style="width: 200px;font-size: 14px">
                         </p>
                     </div>
                     <div id="calendar">
                         <h2>What's coming up in the School Library of Make Believe?</h2>
                         <iframe 
+                            title="Library event calendar"
                             src="https://calendar.google.com/calendar/embed?src=136633fad06c802ae287d26750285fe507503146ef5ada3ce2ac2a4bf1bd78d7%40group.calendar.google.com&ctz=America%2FDetroit" 
                             style="border: 0" 
                             width="400" 
@@ -79,51 +88,53 @@
                     <div id="contact">
                         <h2>Contact Mrs. Gauss</h2>
                         <form 
-                            action="https://formspree.io/f/xwplkvjp" 
-                            method="post"
-                            class="validate">
-                            <p>
-                              <label 
-                                for="name">
-                                Name:</label>
-                              <input 
-                                type="text" 
-                                id="name" 
-                                placeholder="Your name" 
-                                name="user_name" class="form-input" 
-                                required/>
-                            </p>
-                            <p>
-                              <label 
-                                for="mail">
-                                Email:</label>
-                              <input 
-                                type="email" 
-                                id="mail" 
-                                placeholder="Your email address" 
-                                name="user_email" 
-                                class="form-input" 
-                                required/>
-                            </p>
-                            <p>
-                              <label    
-                                for="msg">
-                                Message:</label>
-                              <textarea 
-                                id="msg" 
-                                name="user_message" 
-                                class="form-input" 
-                                required></textarea>
-                            </p>
-                            <p 
-                                id="contact_button" 
-                                class="button">
-                                <button 
-                                    type="submit">Send your message</button>
-                            </p>
-                        </form>
-                    </div>
-                
+                        action="https://formspree.io/f/xwplkvjp" 
+                        method="post"
+                        class="validate">
+                        <p>
+                          <label 
+                            for="name">
+                            Name:</label>
+                          <input 
+                            type="text" 
+                            id="name" 
+                            placeholder="Your name" 
+                            style="width: 200px; font-size: 14px"
+                            name="user_name" class="form-input" 
+                            required/>
+                        </p>
+                        <p>
+                          <label 
+                            for="mail">
+                            Email:</label>
+                          <input 
+                            type="email" 
+                            id="mail" 
+                            placeholder="Your email address" 
+                            style="font-size: 14px; width: 200px"
+                            name="user_email" 
+                            class="form-input" 
+                            required/>
+                        </p>
+                        <p>
+                          <label    
+                            for="msg">
+                            Message:</label>
+                          <textarea 
+                            id="msg" 
+                            name="user_message" 
+                            class="form-input" 
+                            style="width: 200px"
+                            required></textarea>
+                        </p>
+                        <p 
+                            id="contact_button" 
+                            class="button">
+                            <button 
+                                type="submit">Send your message</button>
+                        </p>
+                      </form>
+                    </div>   
             </div>    
         </main>  
             <div id="footer">
@@ -131,7 +142,7 @@
                     <a 
                         href="https://angell.a2schools.org" 
                         class="school-logo"><img 
-                        src="images/schoollogo.jpg" 
+                        src="images/schoollogo.webp" 
                         alt="School of Make Believe Logo" 
                         width="50" 
                         height="50"/></a>
